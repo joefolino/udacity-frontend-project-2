@@ -1,0 +1,13 @@
+# Node modules folder
+node_modules/
+
+# Build output folder
+dist/
+
+# System files (macOS)
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
