@@ -1,0 +1,49 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $color-surface;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.site-header__inner {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: $space-2 calc(1rem + 1vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding 0.2s ease;
+}
+
+.site-header__logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: $color-text;
+}
+
+.site-nav {
+  display: flex;
+  gap: $space-2;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: $color-muted;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background-color: rgba(124, 155, 179, 0.08);
+    color: $color-text;
+  }
+}
+
+/* Shrinks header on scroll */
+.site-header--shrink .site-header__inner {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

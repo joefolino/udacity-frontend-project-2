@@ -1,19 +1,14 @@
 {
-  "name": "portfolio-homepage",
-  "version": "0.1.0",
-  "private": true,
+  "name": "udacity-frontend-project-2",
+  "version": "1.0.0",
+  "description": "Udacity Front-End Project 2 - Portfolio homepage",
   "scripts": {
-    "prebuild": "cp src/index.html dist/index.html && cp src/img/* dist/img/",
-    "build": "sass src/main.scss dist/main.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server 'dist' --files 'dist'"
-  },
-  "dependencies": {
-    "browser-sync": "^3.0.4",
-    "less-watch-compile": "^2.1.0"
+    "build": "sass src/scss/main.scss dist/main.css --style=compressed",
+    "watch": "sass --watch src/scss/main.scss:dist/main.css",
+    "start": "browser-sync start --server src --files src"
   },
   "devDependencies": {
-    "less": "^4.2.0",
-    "sass": "^1.94.0"
+    "browser-sync": "^2.29.3",
+    "sass": "^1.80.4"
   }
 }

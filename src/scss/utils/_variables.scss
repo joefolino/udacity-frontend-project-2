@@ -1,0 +1,30 @@
+/* Colors */
+$color-bg: #f5f7fb;
+$color-surface: #ffffff;
+$color-hero-heading: #1a2b3c;
+$color-text: #7c8ba0;
+$color-muted: #2a2f36;
+$color-primary: #7c9bb3;
+$color-accent: #eec5f2;
+
+/* Typography */
+$font-family-base: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+  sans-serif;
+$font-size-base: 16px;
+
+/* Spacing */
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 1.5rem;
+$space-4: 2rem;
+$space-5: 3rem;
+
+/* Layout */
+$container-max: 960px;
+$radius-lg: 1rem;
+$shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
+
+/* Breakpoints */
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;

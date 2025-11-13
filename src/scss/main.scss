@@ -1,0 +1,19 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/resets';
+@import 'base/base';
+
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/projects';
+@import 'blocks/footer';
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

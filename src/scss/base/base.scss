@@ -1,0 +1,68 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+/* Visible focus outline */
+:focus-visible {
+  outline: 3px solid $color-primary;
+  outline-offset: 2px;
+}
+
+/* Links clearly visible */
+a {
+  color: $color-primary;
+  text-decoration: underline;
+}
+
+/* Shared inner container */
+.section-inner {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding-left: calc(1rem + 1vw);
+  padding-right: calc(1rem + 1vw);
+}
+
+/* Section spacing */
+section {
+  padding: $space-4 0;
+
+  @include mq(md) {
+    padding: $space-5 0;
+  }
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: $space-3;
+  color: $color-text;
+
+  @include mq(md) {
+    font-size: 1.75rem;
+  }
+}
+
+.section-text {
+  color: $color-muted;
+  max-width: 40rem;
+}
+
+/* Buttons */
+.button {
+  @include button-base;
+  font-size: 0.95rem;
+}
+
+.button--primary {
+  background-color: $color-primary;
+  color: #ffffff;
+}
+
+.button--ghost {
+  background-color: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+}
