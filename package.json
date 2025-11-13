@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "sass src/scss/main.scss dist/main.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "cp src/index.html dist/index.html && cp src/img/* dist/img/",
+    "build": "sass src/main.scss dist/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server 'dist' --files 'dist'"
   },
   "dependencies": {
+    "browser-sync": "^3.0.4",
     "less-watch-compile": "^2.1.0"
   },
   "devDependencies": {

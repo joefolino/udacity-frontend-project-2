@@ -1,0 +1,49 @@
+.intro-banner {
+  margin-top: 72px; // space for fixed header
+  min-height: 70vh;
+  background-image: url("../src/img/background.jpg"); // adjust path if needed
+  background-size: cover;
+  background-position: center;
+
+  &__overlay {
+    background: linear-gradient(
+      to bottom right,
+      rgba(83, 107, 120, 0.75),
+      rgba(172, 203, 225, 0.7)
+    );
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__avatar {
+    border-radius: 999px;
+    box-shadow: $shadow-soft;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

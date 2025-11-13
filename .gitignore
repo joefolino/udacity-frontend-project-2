@@ -1,9 +1,6 @@
 # Node modules folder
 node_modules/
 
-# Build output folder
-dist/
-
 # System files (macOS)
 .DS_Store
 
