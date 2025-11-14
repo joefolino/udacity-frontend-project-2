@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Udacity Front-End Project 2 - Portfolio homepage",
   "scripts": {
-    "build": "sass src/scss/main.scss dist/main.css --style=compressed",
-    "watch": "sass --watch src/scss/main.scss:dist/main.css",
-    "start": "browser-sync start --server src --files src"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start -c bs-config.js"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "less-watch-compile": "^2.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
