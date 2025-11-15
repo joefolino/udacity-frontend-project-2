@@ -19,10 +19,10 @@ module.exports = {
     watch: true,
     files: [
         // reload browser when files in dist/ change
-        "dist/*",
+       [ "/.dist/*"],
         {
             // rebuild files in src/ when source files change
-            match: ["src/*.html", "src/*.scss"],
+            match: ["./src/*.html", "./src/scss/*.scss"],
             fn:  async function (event, file) {
                 if (event === "change") {
                     if (path.extname(file) === '.html')

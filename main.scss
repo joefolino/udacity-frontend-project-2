@@ -17,3 +17,9 @@
     scroll-behavior: auto !important;
   }
 }
+body {
+  background-color: green;
+  color: $text-color;
+  font-family: $font-family;
+  line-height: 1.6;
+}
